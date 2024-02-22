@@ -5,7 +5,7 @@ import 'package:flutter_application_1/data/dummy_users.dart';
 class UserList extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    const users = DUMMY_USERS;
+    const users = {...DUMMY_USERS};
     return Scaffold(
       appBar: AppBar(
         title: const Text('Lista de Usuários'),
