@@ -6,7 +6,7 @@ class UserTile extends StatelessWidget{
   
   final User user;
 
-  UserTile(this.user);
+  const UserTile(this.user, {super.key});
   
   @override
   Widget build(BuildContext context){
@@ -21,8 +21,8 @@ class UserTile extends StatelessWidget{
         width:100,
         child: Row(
         children: <Widget>[
-          IconButton( icon: const Icon(Icons.edit), onPressed: (){},),
-           IconButton(icon: const Icon(Icons.delete), onPressed: (){},),
+          IconButton( icon: const Icon(Icons.edit), color: Colors.orange, onPressed: (){},),
+           IconButton(icon: const Icon(Icons.delete), color: Colors.red, onPressed: (){},),
         ],
       ),
       ),
